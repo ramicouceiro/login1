@@ -1,0 +1,136 @@
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+                /* border: 1px solid blue; */
+            }
+            
+            body {
+                background-color: #C36074;
+            }
+            
+            .container {
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .content {
+                width: 100%;
+                height: 100%;
+                max-height: 600px;
+                max-width: 800px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background: linear-gradient(to right, #60D3C3 0%, #60D3C3 50%, #2F4056 50%, #2F4056 100%);
+                border-radius: 20px;
+                box-shadow: 2px 0.5px 10px black;
+            }
+            
+            .login {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                height: 100%;
+                display: flex;
+                /* background-color: #2F4056; */
+            }
+            
+            .inputs-login {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .inputs-login input {
+                display: flex;
+                width: 300px;
+                height: 30px;
+                background-color: #2F4056;
+                margin-top: 0px;
+                margin-bottom: 30px;
+                border: none;
+                border-bottom: 1px solid #60D3C3;
+            }
+            
+            .terminos {
+                display: flex;
+            }
+            
+            .terminos input {
+                width: 12px;
+            }
+            
+            .terminos label {
+                font-size: 12px;
+                color: gray;
+            }
+            
+            .terminos label a {
+                text-decoration: none;
+            }
+            
+            .terminos label a:hover {
+                text-decoration: underline;
+                text-decoration-color: #60D3C3;
+            }
+            
+            .texto-login {
+                display: flex;
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 50px;
+                text-decoration: underline;
+                text-decoration-color: #60D3C3;
+            }
+            
+            .izquierda-login {
+                width: 400px;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .img-login {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .img-login img {
+                margin-top: 20px;
+                width: 399px;
+            }
+            
+            .submit input {
+                display: flex;
+                justify-content: center;
+                width: 100px;
+                background-color: #60D3C3;
+                border-radius: 20px;
+                cursor: pointer;
+                box-shadow: 2px 0.5px 10px black;
+            }
+            
+            @media (max-width: 800px) {
+                .izquierda-login {
+                    display: none;
+                }
+                .content {
+                    background: #2F4056;
+                }
+                .login {
+                    position: absolute;
+                }
+            }
